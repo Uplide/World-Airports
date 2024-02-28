@@ -1,33 +1,49 @@
 # World Airports Map
 
-This project aims to display all the airports around the world on a single map.
+This project displays airports around the world on a map using Leaflet.js and Express.js.
 
-## How to Use?
+## Usage
 
 1. **Clone the project:**
 
     ```bash
-    git clone https://github.com/username/world-airports-map.git
+    git clone https://github.com/Uplide/World-Airports.git
     ```
 
-2. **Access the project directory:**
+2. **Install dependencies:**
 
     ```bash
-    cd world-airports-map
+    cd World-Airports
+    npm install
     ```
 
-3. **Open the map:**
+3. **Start the server:**
 
-    You can open the map file using a map viewer or a web browser.
+    ```bash
+    npm start
+    ```
+
+4. **Open your web browser and go to [http://localhost:3000](http://localhost:3000).**
+
+## Project Structure
+
+- `public/index.html`: HTML file containing the Leaflet map setup and JavaScript code to fetch airport data.
+- `index.js`: Express.js server to serve the HTML file and airport data.
+- `airports.json`: JSON file containing airport data.
 
 ## Data Sources
 
-This map is created using data from [OpenStreetMap](https://www.openstreetmap.org/) and [Air Traffic Control Database (ATC)](https://www.icao.int/).
+The airport data is sourced from the `airports-GB.json` file, which contains information about airports around the world.
+
+## Dependencies
+
+- [Leaflet](https://leafletjs.com/): A JavaScript library for interactive maps.
+- [Express](https://expressjs.com/): A web application framework for Node.js.
 
 ## Contribution
 
-If there's any airport missing or needs updating, feel free to contribute! Head over to the project repository and submit a pull request. Your contributions are welcome.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Refer to the license file for more information.
+This project is licensed under the [MIT License](LICENSE).
